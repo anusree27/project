@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Happy Birthday Chellam</title>
+  
+  <style>
+    .image-grid {
+      display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+    }
+    .image-grid img {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+}
+  </style>
+</head>
+<body>
+  <div class="room">
+    <h1>Question 1</h1>
+    <div class="image-grid">
+      <img src="1.jpg" alt="Image 1">
+      <img src="2.jpg" alt="Image 2">
+      <img src="3.jpg" alt="Image 3">
+      <img src="4.png" alt="Image 4">
+    </div>
+
+
+    <br>
+    <p>Riddle: Which is my favourite picture?</p>
+    <p>a. first,   b. second,   c. All of the above   d. third </p>
+    <p>Type the option</p>
+    <input type="text" id="answer">
+    <button onclick="checkAnswer('c', 'room2.html', 'WrongRoom.html')">Submit</button>
+  </div>
+
+  
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
